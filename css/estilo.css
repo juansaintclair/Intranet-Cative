@@ -1,0 +1,603 @@
+/**
+ * @package     Cattive.Site
+ * @subpackage  Templates.cattive
+ *
+ * @copyright   Copyright (C) 2015, Inc. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,400,700);
+
+
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	background-color: #f5f5f5;
+}
+
+	body a {
+		-moz-transition: all .2s ease-in;
+		-o-transition: all .2s ease-in;
+		-webkit-transition: all .2s ease-in;
+		transition: all .2s ease-in;
+	}
+
+:hover {
+	-moz-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	-webkit-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+}
+
+.fr {
+	float: right;
+}
+
+.fl {
+	float: left;
+}
+
+.cb {
+	clear: both;
+}
+
+.wrapper {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+.pace {
+	-webkit-pointer-events: none;
+	pointer-events: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+	.pace .pace-progress,
+	.pace .pace-inactive {
+		background: #4d90fe;
+		position: fixed;
+		z-index: 2000;
+		top: 0;
+		right: 100%;
+		width: 100%;
+		height: 2px;
+	}
+
+
+.navbar-cattive {
+	background-color: #FFF;
+	color: #889fae;
+}
+
+
+
+	.navbar-cattive a:link,
+	.navbar-cattive a:visited,
+	.navbar-cattive a:active,
+	.navbar-cattive a:hover {
+		color: #889fae;
+		text-decoration: none;
+	}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+.teste {
+	background-color: #4d90fe;
+	height: 50px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	line-height: 50px;
+}
+
+.logo {
+	padding: 10px 20px 7px 20px;
+}
+
+	.logo img {
+		height: 40px;
+		width: auto;
+	}
+
+
+.si-icons-default > span {
+	font-size: 13px;
+	font-weight: bold;
+	color: #c9ccd3;
+	float: right;
+	padding-top: 8px;
+	cursor: pointer;
+}
+
+	.si-icons-default > span > i {
+		font-size: 20px;
+		padding-right: 5px;
+	}
+
+@-moz-document url-prefix() {
+	.si-icons-default > span > a {
+		padding-top: 13px;
+	}
+}
+
+.menu-top {
+	width: 65px;
+	margin-top: 12px;
+}
+
+.icons {
+	background-color: #CCC;
+}
+
+/* Menu */
+.container-menu {
+	height: 100%;
+}
+
+.megamenu {
+	position: absolute;
+	z-index: 9999;
+	margin-top: 60px;
+	display: none;
+}
+
+.menu,
+.mp-menu {
+	color: #737373;
+	font-weight: bold;
+	font-size: 12px;
+	background-color: #FFF;
+}
+
+.itens-menu-inicial > li > a {
+	font-weight: bold !important;
+}
+
+.menu {
+	height: 515px;
+	-webkit-box-shadow: -10px 11px 21px -4px rgba(0,0,0,0.11);
+	-moz-box-shadow: -10px 11px 21px -4px rgba(0,0,0,0.11);
+	box-shadow: -10px 11px 21px -4px rgba(0,0,0,0.11);
+	-webkit-border-top-right-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-bottomright: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+	.menu a:link,
+	.menu a:visited,
+	.menu a:active,
+	.menu a:hover {
+		color: #737373;
+	}
+
+
+
+.mp-level hr {
+	margin: 0;
+	border-top: 1px solid #fafafa;
+	margin-left: 23px;
+	margin-right: 30px;
+	margin-top: 15px;
+}
+
+.menu-pai > div,
+.conteudo-filho-padrao > div:not(.ps-scrollbar-y-rail),
+.mp-menu ul li,
+.mp-level > div:first-child,
+.mp-menu .ultimaPatriarca,
+.neto > div {
+	padding-left: 23px;
+}
+
+.menu i {
+	opacity: 0.5;
+	filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.mp-menu ul > li i:not(.menu-mobile-power-off) {
+	padding-left: 10px;
+}
+
+.menu-pai i,
+.conteudo-filho-padrao i {
+	padding-left: 5px;
+}
+
+.menu-pai > div:first-child,
+.mp-menu > div:first-child,
+.mp-level > div:first-child {
+	padding-top: 20px;
+	padding-bottom: 17px;
+}
+
+.mp-level > div:first-child {
+	padding-top: 0;
+}
+
+.menu-pai,
+.menu-filho {
+	width: 204px;
+	height: 100%;
+}
+
+.menu-filho,
+.menu-img {
+	-webkit-box-shadow: -4px 2px 10px -3px rgba(0,0,0,0.05);
+	-moz-box-shadow: -4px 2px 10px -3px rgba(0,0,0,0.05);
+	box-shadow: -4px 2px 10px -3px rgba(0,0,0,0.05);
+	border-radius: 0;
+}
+
+.menu-img {
+	min-width: 289px;
+	height: 100%;
+}
+
+	.menu-img img {
+		-webkit-border-top-right-radius: 3px;
+		-webkit-border-bottom-right-radius: 3px;
+		-moz-border-radius-topright: 3px;
+		-moz-border-radius-bottomright: 3px;
+		border-top-right-radius: 3px;
+		border-bottom-right-radius: 3px;
+	}
+
+.menu-filho > div:not(.filho) {
+	display: none;
+}
+
+.menu-filho div:not(.item-filho),
+.neto div:not(.item-filho) {
+	font-weight: normal;
+}
+
+.pai,
+.fixo,
+.neto > div,
+.mp-menu ul li > a,
+.conteudo-filho-padrao > div:not(.ps-scrollbar-y-rail) {
+	cursor: pointer;
+	border-left: 2px solid #FFF;
+}
+
+	.mp-menu ul li > a:active {
+		text-decoration: none;
+	}
+
+.pai,
+.filho,
+.fixo {
+	padding: 8px 0 8px 0;
+}
+
+@media (max-width: 768px) {
+	.pai,
+	.filho,
+	.fixo {
+		padding: 8px 0 8px 0;
+	}
+}
+
+.conteudo-filho-padrao > div:not(.ps-scrollbar-y-rail) {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.conteudo-filho-inicial > .item-filho {
+	padding-top: 12px;
+}
+
+/*.menu-pai > div:hover:not(.menu-pesquisar),
+.conteudo-filho-padrao > div:hover:not(:first-child),
+.mp-menu ul li > a:hover,
+.neto > div:hover {
+	border-left: 2px solid #14a0f8;
+	-moz-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	-webkit-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+}*/
+
+
+
+.ultimaPatriarca {
+	margin-top: 55px;
+	border-bottom: none;
+	padding-top: 0;
+	height: 50px;
+	padding-top: 10px;
+	margin-bottom: 20px;
+}
+
+	.ultimaPatriarca:hover {
+		background-color: #fafafa;
+	}
+
+.ultimaPatriarca-mobile {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	border-left: 2px solid #FFF;
+}
+
+
+.ultimaPatriarca > div {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.ultimaPatriarca img {
+	border-radius: 3px;
+	margin-right: 10px;
+}
+
+.ultimaPatriarca a {
+	display: block;
+}
+
+.ultimaPatriarca p {
+	color: #4d90fe;
+}
+
+.ultimaPatriarca a:last-child,
+.ultimaPatriarca a:last-child:hover {
+	padding-top: 7px;
+	color: #aaa;
+	font-size: 11px;
+}
+
+.ultimaPatriarca:hover {
+	border-left: 2px solid #14a0f8;
+}
+
+.ultimaPatriarca a:link,
+.ultimaPatriarca a:visited,
+.ultimaPatriarca a:active {
+	text-decoration: none;
+}
+
+.ultimaPatriarca a:hover {
+	color: #004185;
+	text-decoration: none;
+}
+
+.menu-pesquisar > input {
+	border: none;
+	outline: none;
+}
+
+.menu-pesquisar > ::-webkit-input-placeholder {
+	color: #737373;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.menu-pesquisar > :-moz-placeholder {
+	color: #737373;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.menu-pesquisar > ::-moz-placeholder {
+	color: #737373;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.menu-pesquisar > :-ms-input-placeholder {
+	color: #737373;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.filtersubmit {
+	position: relative;
+	left: 0px;
+	color: #737373;
+	cursor: pointer;
+	width: 0;
+}
+
+.menu-pesquisar hr {
+	border-top: 1px solid #fafafa;
+	max-width: 150px;
+	text-align: left;
+	margin: 0;
+	margin-top: 10px;
+}
+
+.item-filho {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.conteudo-filho-padrao > div:nth-of-type(2) {
+	margin-top: 20px;
+}
+
+.conteudo-filho-padrao {
+	margin-top: 20px;
+}
+
+@media (max-width: 699px) {
+	.megamenu {
+		margin-left: -2px;
+	}
+
+	.menu-top {
+		width: 10px;
+	}
+
+	.menu-filho,
+	.menu-img {
+		display: none;
+	}
+}
+
+
+/* Menu Lateral no Mobile */
+.mp-back {
+	background: none;
+	outline: none;
+	color: #4d90fe;
+	text-transform: none;
+	letter-spacing: normal;
+	font-weight: normal;
+	display: block;
+	font-size: 13px;
+	padding: 23px 0 0 23px;
+	position: relative;
+	box-shadow: inset 0 1px rgba(0,0,0,0.1);
+	-webkit-transition: background 0.3s;
+	-moz-transition: background 0.3s;
+	transition: background 0.3s;
+}
+
+	.mp-back:hover {
+		color: #004185;
+	}
+
+.mp-menu.mp-cover h2 {
+	font-weight: bold;
+	font-size: 12px;
+	color: #737373;
+	padding: 30px 0 0 24px;
+	text-transform: none;
+	font-family: 'Lato', sans-serif;
+}
+
+.mp-level {
+	background-color: #FFF;
+}
+
+	.mp-pusher::after, .mp-level::after {
+		background: none;
+	}
+
+	.mp-level > ul > li:first-child > a {
+		box-shadow: none;
+		margin-top: 14px;
+	}
+
+.mp-menu {
+	-webkit-box-shadow: 10px -5px 15px -18px rgba(0,0,0,0.43);
+	-moz-box-shadow: 10px -5px 15px -18px rgba(0,0,0,0.43);
+	box-shadow: 10px -5px 15px -18px rgba(0,0,0,0.43);
+}
+
+	.mp-menu ul li {
+		padding-left: 0;
+	}
+
+		.mp-menu ul li > a {
+			font-size: 12px;
+			color: #737373;
+			padding-top: 14px;
+			padding-bottom: 14px;
+			font-weight: normal;
+		}
+
+			.mp-menu ul li > a:hover {
+				text-decoration: none;
+				background-color: none;
+			}
+
+	.mp-menu ul li {
+		border-bottom: none !important;
+		outline: none;
+	}
+
+.mp-back:hover {
+	text-decoration: none !important;
+	color: #4d90fe;
+}
+
+.mp-menu i {
+	display: inline;
+}
+
+.mp-menu a:active {
+	text-decoration: none !important;
+}
+
+.conteudo-filho, .neto {
+	display: none;
+}
+
+.seta:after {
+	content: "\f105";
+	font-family: FontAwesome;
+	font-size: 10px;
+	opacity: 0.5;
+	filter: alpha(opacity=50); /* For IE8 and earlier */
+	padding-left: 5px;
+}
+
+#container-admSites,
+#container-Atendimento,
+#container-Projetos,
+#container-dar-suporte {
+	position: relative;
+	height: 470px;
+	margin-right: 15px;
+}
+
+#containerDarSuporteMobile,
+#containerProjetosMobile {
+	position: relative;
+	margin-right: 15px;
+	height: 200px;
+	margin-top: 14px;
+}
+
+.ps-scrollbar-y-rail,
+.ps-scrollbar-y-rail:hover,
+.ps-scrollbar-y:hover {
+	background-color: transparent;
+	border-left: none !important;
+}
+
+/**
+*** Seta para CIMA
+**/
+.seta-cima:before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #FFF;
+}
+
+.seta-menu {
+	margin-left: 20px;
+	margin-bottom: -2px;
+}
+
+.pai, .item-filho > div, .filho > div {
+	border-left: 2px solid #FFF;
+}
+
+.marcadorLateral {
+	border-left: 2px solid #4d90fe !important;
+}
+
+.ps-container:hover > .ps-scrollbar-y-rail:hover,
+.ps-container:hover > .ps-scrollbar-y-rail:focus {
+    background-color: #FFF!important; 
+}
